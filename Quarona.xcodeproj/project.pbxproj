@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5007C3672505366B0085591F /* BudgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007C3662505366B0085591F /* BudgetManager.swift */; };
+		5007C36925053DA70085591F /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007C36825053DA70085591F /* ExpenseViewController.swift */; };
+		5007C36B25053E3C0085591F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007C36A25053E3C0085591F /* Expense.swift */; };
 		50AC6FB82504E4BB00AA32ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AC6FB72504E4BB00AA32ED /* AppDelegate.swift */; };
 		50AC6FBA2504E4BB00AA32ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AC6FB92504E4BB00AA32ED /* SceneDelegate.swift */; };
-		50AC6FBC2504E4BB00AA32ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AC6FBB2504E4BB00AA32ED /* ViewController.swift */; };
+		50AC6FBC2504E4BB00AA32ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AC6FBB2504E4BB00AA32ED /* MainViewController.swift */; };
 		50AC6FBF2504E4BB00AA32ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AC6FBD2504E4BB00AA32ED /* Main.storyboard */; };
 		50AC6FC12504E4C100AA32ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AC6FC02504E4C100AA32ED /* Assets.xcassets */; };
 		50AC6FC42504E4C100AA32ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AC6FC22504E4C100AA32ED /* LaunchScreen.storyboard */; };
+		50B1014F2505F41900849D26 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B1014D2505F41900849D26 /* ItemCell.swift */; };
+		50B101502505F41900849D26 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B1014E2505F41900849D26 /* ItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5007C3662505366B0085591F /* BudgetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetManager.swift; sourceTree = "<group>"; };
+		5007C36825053DA70085591F /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
+		5007C36A25053E3C0085591F /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		50AC6FB42504E4BB00AA32ED /* Quarona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quarona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50AC6FB72504E4BB00AA32ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50AC6FB92504E4BB00AA32ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50AC6FBB2504E4BB00AA32ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50AC6FBB2504E4BB00AA32ED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		50AC6FBE2504E4BB00AA32ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50AC6FC02504E4C100AA32ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50AC6FC32504E4C100AA32ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50AC6FC52504E4C100AA32ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B1014D2505F41900849D26 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		50B1014E2505F41900849D26 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		50AC6FB62504E4BB00AA32ED /* Quarona */ = {
 			isa = PBXGroup;
 			children = (
+				50AC6FCD2504E52700AA32ED /* Controller */,
+				50AC6FCC2504E52300AA32ED /* View */,
+				50AC6FCB2504E51D00AA32ED /* Model */,
 				50AC6FB72504E4BB00AA32ED /* AppDelegate.swift */,
 				50AC6FB92504E4BB00AA32ED /* SceneDelegate.swift */,
-				50AC6FBB2504E4BB00AA32ED /* ViewController.swift */,
-				50AC6FBD2504E4BB00AA32ED /* Main.storyboard */,
 				50AC6FC02504E4C100AA32ED /* Assets.xcassets */,
-				50AC6FC22504E4C100AA32ED /* LaunchScreen.storyboard */,
 				50AC6FC52504E4C100AA32ED /* Info.plist */,
 			);
 			path = Quarona;
+			sourceTree = "<group>";
+		};
+		50AC6FCB2504E51D00AA32ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5007C3662505366B0085591F /* BudgetManager.swift */,
+				5007C36A25053E3C0085591F /* Expense.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50AC6FCC2504E52300AA32ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50AC6FBD2504E4BB00AA32ED /* Main.storyboard */,
+				50AC6FC22504E4C100AA32ED /* LaunchScreen.storyboard */,
+				50B1014D2505F41900849D26 /* ItemCell.swift */,
+				50B1014E2505F41900849D26 /* ItemCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50AC6FCD2504E52700AA32ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50AC6FBB2504E4BB00AA32ED /* MainViewController.swift */,
+				5007C36825053DA70085591F /* ExpenseViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B101502505F41900849D26 /* ItemCell.xib in Resources */,
 				50AC6FC42504E4C100AA32ED /* LaunchScreen.storyboard in Resources */,
 				50AC6FC12504E4C100AA32ED /* Assets.xcassets in Resources */,
 				50AC6FBF2504E4BB00AA32ED /* Main.storyboard in Resources */,
@@ -138,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50AC6FBC2504E4BB00AA32ED /* ViewController.swift in Sources */,
+				5007C36B25053E3C0085591F /* Expense.swift in Sources */,
+				5007C3672505366B0085591F /* BudgetManager.swift in Sources */,
+				50AC6FBC2504E4BB00AA32ED /* MainViewController.swift in Sources */,
 				50AC6FB82504E4BB00AA32ED /* AppDelegate.swift in Sources */,
+				50B1014F2505F41900849D26 /* ItemCell.swift in Sources */,
+				5007C36925053DA70085591F /* ExpenseViewController.swift in Sources */,
 				50AC6FBA2504E4BB00AA32ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S9PTHR88Y;
 				INFOPLIST_FILE = Quarona/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.meshachadoe.Quarona;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S9PTHR88Y;
 				INFOPLIST_FILE = Quarona/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.meshachadoe.Quarona;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
