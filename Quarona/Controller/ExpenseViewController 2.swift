@@ -18,10 +18,8 @@ class ExpenseViewController: UIViewController, UITextFieldDelegate {
     var budgetManager = BudgetManager()
     
     var expenses: [Expense] = []
-//        Expense(name: "Grocery", value: 50),
-//        Expense(name: "Health Care", value: 100),
-//        Expense(name: "Grocery", value: 50),
-//    ]
+    //        Expense(name: "Grocery", value: 50),
+    //        Expense(name: "Health Care", value: 100)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +27,7 @@ class ExpenseViewController: UIViewController, UITextFieldDelegate {
         addValueField.delegate = self
         expenseTableView.dataSource = self
         expenseTableView.register(UINib(nibName: "ExpenseCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+        addPadding(to: addExpenseField)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -39,11 +38,13 @@ class ExpenseViewController: UIViewController, UITextFieldDelegate {
     @IBAction func addExpensePressed(_ sender: UIButton) {
         if let expenseName = addExpenseField.text, let stringValue = addValueField.text {
             budgetManager.addExpense(expenseName, (stringValue as NSString).floatValue)
-            expenses = budgetManager.getExpenses()
-            totalExpenses.text = String(budgetManager.getTotalExpenses())
-            expenseTableView?.reloadData()
-//            expenseTableView.insertRows(at: [indexPath], with: .bottom)
+            updateTableView()
+            print(expenses)
         }
+    }
+    
+    func updateTableView() {
+        expenses = budgetManager.getExpenses()
     }
 }
 
@@ -57,6 +58,22 @@ extension ExpenseViewController: UITableViewDataSource {
         let cell = expenseTableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! ExpenseCell
         cell.expenseName.text = expense.name
         cell.expenseValue.text = String(format: "%.0f", expense.value)
+        cell.itemBox.backgroundColor = UIColor.black
         return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 160.0
+    }
+}
+
+extension ExpenseViewController {
+    func addPadding(to textfield: UITextField) {
+        textfield.layer.cornerRadius = 5
+        textfield.layer.borderColor = UIColor.black.cgColor
+        textfield.layer.borderWidth = 1
+        let padding = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 10.0, height: 2.0))
+        textfield.leftView = padding
+        textfield.leftViewMode = .always
     }
 }
