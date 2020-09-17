@@ -9,7 +9,7 @@
 import Foundation
 
 struct Expense {
-    var name: String?
-    var value: Float?
+    var name: String
+    var value: Float
 //    var currency
 }

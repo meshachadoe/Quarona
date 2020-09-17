@@ -8,12 +8,18 @@
 
 import Foundation
 
-struct Budget {
+struct BudgetManager {
     var expensesList: [Expense] = []
+    var expenseTotal: Int = 0
     
-    mutating func addExpense(name desc: String, value price: Float) {
-        let newExpense = Expense(name: desc, value: price)
+    mutating func addExpense(_ expenseName: String, _ price: Float) {
+        let newExpense = Expense(name: expenseName, value: price)
         expensesList.append(newExpense)
+        expenseTotal += Int(newExpense.value)
+    }
+    
+    func getTotalExpenses() -> Int {
+        return expenseTotal
     }
     
     func getExpenses() -> [Expense] {
