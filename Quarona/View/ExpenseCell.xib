@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="5" width="349" height="60"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="202-bF-JEz">
-                                <rect key="frame" x="52.5" y="18" width="244" height="24"/>
+                                <rect key="frame" x="20" y="18" width="244" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocery Shopping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnD-u9-BsO">
                                         <rect key="frame" x="0.0" y="0.0" width="170.5" height="24"/>
@@ -52,13 +52,13 @@
                         </subviews>
                         <color key="backgroundColor" name="Black-Color"/>
                         <constraints>
+                            <constraint firstItem="202-bF-JEz" firstAttribute="leading" secondItem="PC5-Qm-0cl" secondAttribute="leading" constant="20" id="2aI-wp-o55"/>
                             <constraint firstAttribute="height" constant="60" id="83O-Or-66w"/>
-                            <constraint firstItem="202-bF-JEz" firstAttribute="centerX" secondItem="PC5-Qm-0cl" secondAttribute="centerX" id="fNI-Ly-82x"/>
                             <constraint firstItem="202-bF-JEz" firstAttribute="centerY" secondItem="PC5-Qm-0cl" secondAttribute="centerY" id="zBF-kx-l2K"/>
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" name="BrokenWhite-Color"/>
+                <color key="backgroundColor" name="Black-Color"/>
                 <constraints>
                     <constraint firstItem="PC5-Qm-0cl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="491-1y-KVa"/>
                     <constraint firstAttribute="bottom" secondItem="PC5-Qm-0cl" secondAttribute="bottom" constant="5" id="9TF-cm-iKH"/>
@@ -78,9 +78,6 @@
     <resources>
         <namedColor name="Black-Color">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </namedColor>
-        <namedColor name="BrokenWhite-Color">
-            <color red="0.91399997472763062" green="0.86299997568130493" blue="0.82700002193450928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White-Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

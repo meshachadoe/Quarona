@@ -10,6 +10,8 @@
 		5007C3672505366B0085591F /* BudgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007C3662505366B0085591F /* BudgetManager.swift */; };
 		5007C36925053DA70085591F /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007C36825053DA70085591F /* ExpenseViewController.swift */; };
 		5007C36B25053E3C0085591F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007C36A25053E3C0085591F /* Expense.swift */; };
+		501CEFA42517806300C67360 /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CEFA32517806300C67360 /* IncomeViewController.swift */; };
+		501CEFA72517821700C67360 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CEFA62517821700C67360 /* Income.swift */; };
 		50AC6FB82504E4BB00AA32ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AC6FB72504E4BB00AA32ED /* AppDelegate.swift */; };
 		50AC6FBA2504E4BB00AA32ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AC6FB92504E4BB00AA32ED /* SceneDelegate.swift */; };
 		50AC6FBC2504E4BB00AA32ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AC6FBB2504E4BB00AA32ED /* MainViewController.swift */; };
@@ -24,6 +26,8 @@
 		5007C3662505366B0085591F /* BudgetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetManager.swift; sourceTree = "<group>"; };
 		5007C36825053DA70085591F /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
 		5007C36A25053E3C0085591F /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		501CEFA32517806300C67360 /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
+		501CEFA62517821700C67360 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
 		50AC6FB42504E4BB00AA32ED /* Quarona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quarona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50AC6FB72504E4BB00AA32ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50AC6FB92504E4BB00AA32ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 			children = (
 				5007C3662505366B0085591F /* BudgetManager.swift */,
 				5007C36A25053E3C0085591F /* Expense.swift */,
+				501CEFA62517821700C67360 /* Income.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			children = (
 				50AC6FBB2504E4BB00AA32ED /* MainViewController.swift */,
 				5007C36825053DA70085591F /* ExpenseViewController.swift */,
+				501CEFA32517806300C67360 /* IncomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,9 +188,11 @@
 				5007C3672505366B0085591F /* BudgetManager.swift in Sources */,
 				50AC6FBC2504E4BB00AA32ED /* MainViewController.swift in Sources */,
 				50AC6FB82504E4BB00AA32ED /* AppDelegate.swift in Sources */,
+				501CEFA72517821700C67360 /* Income.swift in Sources */,
 				50B1014F2505F41900849D26 /* ExpenseCell.swift in Sources */,
 				5007C36925053DA70085591F /* ExpenseViewController.swift in Sources */,
 				50AC6FBA2504E4BB00AA32ED /* SceneDelegate.swift in Sources */,
+				501CEFA42517806300C67360 /* IncomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

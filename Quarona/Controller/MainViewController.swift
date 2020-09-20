@@ -30,6 +30,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func incomeBtnPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToIncome", sender: self)
     }
 
 

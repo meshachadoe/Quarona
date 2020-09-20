@@ -42,7 +42,6 @@ class ExpenseViewController: UIViewController, UITextFieldDelegate {
             expenses = budgetManager.getExpenses()
             totalExpenses.text = String(budgetManager.getTotalExpenses())
             expenseTableView?.reloadData()
-//            expenseTableView.insertRows(at: [indexPath], with: .bottom)
         }
     }
 }
